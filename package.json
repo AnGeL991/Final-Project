@@ -1,0 +1,9 @@
+{
+  "name": "FinalProject",
+  "version": "1.0.0",
+  "description": "NUll",
+  "main": "index.js",
+  "repository": "https://github.com/AnGeL991/Final-Project.git",
+  "author": "Adrian Markuszewski <adrian991999@wp.pl>",
+  "license": "MIT"
+}
