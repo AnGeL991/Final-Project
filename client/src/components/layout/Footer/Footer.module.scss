@@ -1,0 +1,29 @@
+.footer{
+    min-height: 300px;
+    width: 100%;
+    background-color: #451e02d5;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap:10px;
+    color:white;
+    font-size: 24px;
+    .box{
+        margin:20px 0;
+        padding:20px;
+        border-right: 2px solid white;
+        h3{
+            text-transform: uppercase;
+        }
+        a{
+            margin-left:5px;
+            padding:5px;
+            color:white;
+            display:block;
+        }
+       &:last-of-type{
+        border:none;
+    }
+    }
+    
+}

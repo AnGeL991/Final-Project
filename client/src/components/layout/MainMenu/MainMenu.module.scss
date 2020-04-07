@@ -1,0 +1,8 @@
+.header{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr, 0.5fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: fixed;
+}
