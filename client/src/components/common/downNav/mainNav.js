@@ -4,13 +4,14 @@ import {NavLink} from 'react-router-dom';
 
 const MainNav =()=> (
     <nav className={styles.nav}>
-    <NavLink to='/'>Producenci</NavLink>
-    <NavLink to='/'>Kawa</NavLink>
-    <NavLink to='/'>Herbata</NavLink>
-    <NavLink to='/'>Yerba</NavLink>
-    <NavLink to='/'>Expresy i młynki</NavLink>
-    <NavLink to='/'>Akcesoria</NavLink>
-    <NavLink to='/'>Promocje</NavLink>
+    
+    <NavLink to='/Producenci'>Producenci</NavLink>
+    <NavLink to='/Kawa'>Kawa</NavLink>
+    <NavLink to='/Herbata'>Herbata</NavLink>
+    <NavLink to='/Yerba'>Yerba</NavLink>
+    <NavLink to='/Expresy$młynki'>Expresy i młynki</NavLink>
+    <NavLink to='/Akcesoria'>Akcesoria</NavLink>
+    <NavLink to='/Promocje'>Promocje</NavLink>
     </nav>
 );
 

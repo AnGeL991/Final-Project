@@ -1,5 +1,10 @@
-.home{
-    height: 300vh;
-    width: 100%;
-  
+@import "../../../styles/settings.scss";
+
+.home {
+  margin: 0;
+
+  h3 {
+    margin: 0;
+  }
 }
+
