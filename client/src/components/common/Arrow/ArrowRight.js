@@ -1,15 +1,12 @@
-import React from 'react';
-import styles from './Arrow.module.scss';
+import React from "react";
+import styles from "./Arrow.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const ArrowRight =()=> (
-    <div className={styles.rightArrow}>
-    <FontAwesomeIcon icon={faArrowRight} className={styles.arrowCenter}/>
-   </div>
+const ArrowRight = () => (
+  <div className={styles.rightArrow}>
+    <FontAwesomeIcon icon={faArrowRight} className={styles.arrowCenter} />
+  </div>
 );
-
 
 export default ArrowRight;

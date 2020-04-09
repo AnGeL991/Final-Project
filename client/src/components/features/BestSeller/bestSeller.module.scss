@@ -1,0 +1,47 @@
+@import "../../../styles/settings.scss";
+@import "../../../styles/typography.scss";
+
+.bestProduct {
+  box-shadow: $boxShadowBorder;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: calc(50% - 10px);
+  max-height: 460px;
+  text-align: center;
+  position: relative;
+  &:hover .arrow {
+    display: block;
+  }
+  &:first-of-type {
+    margin-top: 0px;
+  }
+  .arrow {
+    cursor: pointer;
+    display: none;
+  }
+  .price {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  .title {
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .secondTitle {
+    font-size: $font-second-title-size;
+    color: white;
+  }
+  img {
+    border-radius: 62px 0;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  p {
+    font-size: $font-properties-size;
+    color: white;
+    text-align: center;
+  }
+}

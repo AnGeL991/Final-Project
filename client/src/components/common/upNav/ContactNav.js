@@ -8,9 +8,8 @@ import {
   faMailBulk,
   faSignInAlt,
   faShoppingBasket,
-  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
-
+import SearchBox from '../SearchBox/searchBox';
 const ContactNav = () => (
   <div>
     <div className={styles.data}>
@@ -38,12 +37,9 @@ const ContactNav = () => (
       </ul>
     </div>
     <div className={styles.purchase}>
-      <div className={styles.searchInput}>
-        <input maxLength="255" name="search" type="search" autoComplete="off" placeholder="szukaj"></input>
-        <div className={styles.circleSearch}>
-          <FontAwesomeIcon icon={faSearch} className={styles.circleIcon}/>
-        </div>
-        </div>
+      <div className={styles.widthSearch}>
+     <SearchBox placeholder='Wyszukaj'/>
+     </div>
       <div className={styles.basket}>
        <a href="#" title="koszyk" className={styles.count}>
          <img></img>Koszyk

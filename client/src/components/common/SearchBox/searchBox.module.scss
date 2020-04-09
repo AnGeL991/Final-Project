@@ -1,0 +1,42 @@
+.searchInput{
+    width: calc(100% - 50px);
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    
+    input{
+      width: 100%;
+      padding:10px;
+      border-radius: 50px;
+      font-size: 14px;
+      background-color: inherit;
+      color:white;
+      &::placeholder{
+        color:white;
+      }
+    }
+  
+  
+  }
+  .circleSearch{
+    position: absolute;
+    top:0;
+    left:calc(100% - 40px);
+    border:3px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    .circleIcon{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color:white;
+    
+    }
+  }

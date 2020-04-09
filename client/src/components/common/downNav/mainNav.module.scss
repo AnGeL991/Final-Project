@@ -1,3 +1,4 @@
+@import '../../../styles/settings.scss';
 .nav{
     grid-area:2/1/3/3;
     display:flex;
@@ -5,8 +6,9 @@
     align-content: center;
     margin:0;
      a{
+         text-transform: uppercase;
          color:white;
-         font-size: 24px;
+         font-size: $font-size-a;
          margin-right: 40px;
          transition: 0.3s linear all;
          &:hover{

@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./boxBrands.module.scss";
 import Button from "../../common/Button/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
+import ArrowLeft from "../../common/Arrow/ArrowLeft";
+import ArrowRight from "../../common/Arrow/ArrowRight";
 
 const BoxBrands = () => (
   <div class={styles.container}>
     <div className={styles.opinion}>
-      <div className={styles.leftArrow}>
-        <FontAwesomeIcon icon={faArrowLeft} className={styles.arrowCenter} />
+      <div className={styles.arrow}>
+        <ArrowRight />
       </div>
 
       <div className={styles.imgBorder}>
@@ -29,11 +30,16 @@ const BoxBrands = () => (
           src="https://images.unsplash.com/photo-1491931648265-8f68c1dc731b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
         ></img>
       </div>
-      <div className={styles.rightArrow}>
-        <FontAwesomeIcon icon={faArrowRight} className={styles.arrowCenter} />
+      <div className={styles.arrow}>
+        <ArrowLeft />
       </div>
+
       <div className={styles.Position}>
-        <Button className={styles.button}> Nasze Marki</Button>
+        <Button className={styles.button}>
+          <NavLink to="/producenci" className={styles.NavLink}>
+            Nasze Marki
+          </NavLink>
+        </Button>
       </div>
     </div>
   </div>

@@ -10,7 +10,6 @@ const MainNav =()=> (
     <NavLink to='/Herbata'>Herbata</NavLink>
     <NavLink to='/Yerba'>Yerba</NavLink>
     <NavLink to='/Expresy$młynki'>Expresy i młynki</NavLink>
-    <NavLink to='/Akcesoria'>Akcesoria</NavLink>
     <NavLink to='/Promocje'>Promocje</NavLink>
     </nav>
 );

@@ -39,7 +39,7 @@ const productInfo =()=>(
     <div className={styles.productInfo}>
     <div className={styles.imgProductInfo}>
     <img src="https://images.unsplash.com/photo-1518975650263-c887d6f1d6f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=60" alt='accessories'/>
-        <div className={styles.title}><Button>Akcesoria</Button></div>
+        <div className={styles.title}><Button>Promocje</Button></div>
     </div>
     </div>
 </div>
