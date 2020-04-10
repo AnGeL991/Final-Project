@@ -6,7 +6,7 @@ import SearchBox from '../../common/SearchBox/searchBox';
 const headerShop =({title})=>(
     <header className={styles.upBox}>
     <h3 className={styles.title}>{title}</h3>
-   <SearchBox maxLength="100" placeholder="Wyszukaj"/>
+   <SearchBox placeholder="Wyszukaj"/>
   </header>
 
 );

@@ -6,8 +6,6 @@ import PropTypes from "prop-types";
 const BrandDetail = ({
   img,
   title,
-  firstButton,
-  secondButton,
   description,
 }) => (
   <div>
@@ -18,11 +16,11 @@ const BrandDetail = ({
         <p className={styles.description}>{description}</p>
         <div className={styles.buttonPosition}>
           <div className={styles.position}>
-            <Button>{firstButton}</Button>
+            <Button>Zobacz Więcej</Button>
           </div>
 
           <div className={styles.position}>
-            <Button>{secondButton}</Button>
+            <Button>Kup Product</Button>
           </div>
         </div>
       </div>
@@ -32,8 +30,6 @@ const BrandDetail = ({
 BrandDetail.propTypes = {
   img: PropTypes.any.isRequired,
   title: PropTypes.string.isRequired,
-  firstButton: PropTypes.string.isRequired,
-  secondButton: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
 

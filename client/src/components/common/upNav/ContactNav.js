@@ -9,7 +9,7 @@ import {
   faSignInAlt,
   faShoppingBasket,
 } from "@fortawesome/free-solid-svg-icons";
-import SearchBox from '../SearchBox/searchBox';
+import SearchBox from "../SearchBox/searchBox";
 const ContactNav = () => (
   <div>
     <div className={styles.data}>
@@ -17,10 +17,6 @@ const ContactNav = () => (
         <li>
           <FontAwesomeIcon icon={faPhone} className={styles.icon} />
           <a>+48 999 999 999</a>
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faMobile} className={styles.icon} />
-          <a> +48 321 323 323</a>
         </li>
         <li>
           <FontAwesomeIcon icon={faMailBulk} className={styles.icon} />
@@ -38,15 +34,18 @@ const ContactNav = () => (
     </div>
     <div className={styles.purchase}>
       <div className={styles.widthSearch}>
-     <SearchBox placeholder='Wyszukaj'/>
-     </div>
+        <SearchBox placeholder="Wyszukaj" />
+      </div>
       <div className={styles.basket}>
-       <a href="#" title="koszyk" className={styles.count}>
-         <img></img>Koszyk
-       </a>
-       <div className={styles.circleSearch}>
-         <FontAwesomeIcon icon={faShoppingBasket} className={styles.circleIcon}/>
-       </div>
+        <a href="#" title="koszyk" className={styles.count}>
+          <img></img>Koszyk
+        </a>
+        <div className={styles.circleSearch}>
+          <FontAwesomeIcon
+            icon={faShoppingBasket}
+            className={styles.circleIcon}
+          />
+        </div>
       </div>
     </div>
   </div>

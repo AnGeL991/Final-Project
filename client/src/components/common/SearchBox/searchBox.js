@@ -18,6 +18,6 @@ const searchBox =({placeholder,maxLength})=>(
 
 searchBox.propTypes={
     placeholder: PropTypes.string.isRequired,
-    maxLength:PropTypes.number
+    maxLength:PropTypes.string
 }
 export default searchBox;

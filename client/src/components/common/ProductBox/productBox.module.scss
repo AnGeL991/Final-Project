@@ -1,44 +1,45 @@
 @import "../../../styles/settings.scss";
-.conteiner{
-    padding:10px;
-    color:white;
-    background-color: rgba($color: #000000, $alpha: 0.4);
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 10px;
-    transition: $transition;
-    margin-bottom: 20px;
-    &:last-of-type{
-        margin-bottom: 0;
+.conteiner {
+  padding: 10px;
+  color: white;
+  box-shadow: $boxShadowBorder;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  transition: $transition;
+  margin-bottom: 20px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &:hover {
+    background-color: rgba($color: #000000, $alpha: 0);
+    transform: scale(1.02);
+  }
+  img {
+    grid-area: 1/1/2/2;
+    border-radius: 80px;
+    width: 200px;
+    object-fit: contain;
+  }
+  .specification {
+    text-align: center;
+    grid-area: 1/2/2/3;
+    .specificationBox p {
+      padding: 0;
+      margin: 0;
     }
-    &:hover{
-        background-color: rgba($color: #000000, $alpha: 0.0);
-        transform: scale(1.02);
-    }
-    img{
-        grid-area: 1/1/2/2;
-        border-radius: 80px;
-        width: 200px;
-        object-fit: contain;
-    }
-    .specification{
-        text-align: center;
-        grid-area: 1/2/2/3;
-        .specificationBox p{
-         padding:0;
-         margin:0;   
-        }
-    }
-    h3,p{
-        font-size: $font-title-size;
-        color: white;
-       
-    }
-    p{
-        font-size: $font-properties-size;
-    }
-    .price{
-        font-size: 18px;
-    }
+  }
+  h3,
+  p {
+    font-size: $font-title-size;
+    color: white;
+  }
+  p {
+    font-size: $font-properties-size;
+  }
+  .price {
+    font-size: 18px;
+  }
 }

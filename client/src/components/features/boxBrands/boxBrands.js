@@ -6,7 +6,7 @@ import ArrowLeft from "../../common/Arrow/ArrowLeft";
 import ArrowRight from "../../common/Arrow/ArrowRight";
 
 const BoxBrands = () => (
-  <div class={styles.container}>
+  <div className={styles.container}>
     <div className={styles.opinion}>
       <div className={styles.arrow}>
         <ArrowRight />

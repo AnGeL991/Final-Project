@@ -42,13 +42,13 @@ const bestSeller = ({
 );
 
 bestSeller.propTypes = {
-  title: PropTypes.string.isRequired,
-  secondTitle: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  secondTitle: PropTypes.string,
   //image: PropTypes.image.isRequired,
-  price: PropTypes.number.isRequired,
-  type: PropTypes.string.isRequired,
-  composition: PropTypes.string.isRequired,
-  weight: PropTypes.string.isRequired,
+  price: PropTypes.number,
+  type: PropTypes.string,
+  composition: PropTypes.string,
+  weight: PropTypes.string,
 };
 
 export default bestSeller;
