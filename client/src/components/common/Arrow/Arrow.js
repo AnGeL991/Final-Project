@@ -1,4 +1,6 @@
-import React from 'react'
+/** @jsx jsx */
+
+import React from 'react';
 import styles from "./Arrow.module.scss";
 import { css, jsx } from '@emotion/core'
 import ArrowRight from './ArrowRight';
@@ -10,7 +12,7 @@ const Arrow =({ direction,handleClick}) => (
     className={styles.arrow}
     css ={
         css
-        `${direction === 'right' ? `right:25px`: `left: 25px`};
+        `${direction === 'right' ? `right:-5px`: `left:-5px`};
         img{
             transform:translateX(${direction === 'left' ? '-2': '2'}px);
         }`

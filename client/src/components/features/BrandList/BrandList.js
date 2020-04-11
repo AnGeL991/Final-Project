@@ -19,7 +19,7 @@ class BrandList extends React.Component {
     return (
         <>
         <section>
-            {brandProduct.map(el => <BrandDetail kay={el.id} {...el}/>)}
+            {brandProduct.map(el => <BrandDetail key={el.id}  {...el}/>)}
         </section>
         </>
     );

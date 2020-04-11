@@ -35,12 +35,11 @@
   display: flex;
   position: absolute;
   top:50%;
+  transform: translateY(-50%);
   height: 50px;
   width: 50px;
-  justify-content: center;
   cursor: pointer;
-  align-items: center;
-  transition: $transition;
+  transition: transform ease-in 0.1s;
     &:hover {
       transform: slace(1.1);
     }

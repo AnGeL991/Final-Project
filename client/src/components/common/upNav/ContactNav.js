@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./ContactNav.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faMobile,
   faPhone,
   faRegistered,
   faMailBulk,
