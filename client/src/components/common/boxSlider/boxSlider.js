@@ -9,7 +9,7 @@ const boxSlider =()=>(
                       <div className={styles.imgSlider}></div>
                       <div className={styles.description}>
                           <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                        Dzięki nam odkryjesz nowy swiat pełen wspaniałych kaw oraz herbat. Doświadczysz prawdziwej rozkoszy delektując się naszymi towarami.Posiadamy staranie wyselekcjonowane towary i dostarczamy je w ciągu 48h bys jak najszybciej mógł cieszyć się swoim wymarzonym produktem. Nie wierzysz ? Sprawdz sam.
                           </p>
                       </div>
                     </li>

@@ -15,9 +15,16 @@ const ERROR_REQUEST = createActionName("ERROR_REQUEST");
 
 const LOAD_MACHIN_PRODUCT = createActionName("LOAD_MACHIN_PRODUCT");
 
-export const startRequest = () => ({ type: START_REQUEST });
-export const endRequest = () => ({ type: END_REQUEST });
-export const errorRequest = (error) => ({ error, type: ERROR_REQUEST });
+export const startRequest = () => ({
+  type: START_REQUEST,
+});
+export const endRequest = () => ({
+  type: END_REQUEST,
+});
+export const errorRequest = (error) => ({
+  error,
+  type: ERROR_REQUEST,
+});
 
 export const loadMachinProduct = (payload) => ({
   payload,
@@ -29,7 +36,7 @@ export const loadMachinProductRequest = () => {
   return async (dispatch) => {
     dispatch(startRequest());
     try {
-      let res = await axios.get(`${API_URL}/coffeeProduct`);
+      let res = await axios.get(`${API_URL}/machinProduct`);
       dispatch(loadMachinProduct(res.data));
       dispatch(endRequest());
     } catch (e) {
@@ -53,21 +60,36 @@ const initialState = {
 export default function reducer(statePart = initialState, action = {}) {
   switch (action.type) {
     case LOAD_MACHIN_PRODUCT:
-      return { ...statePart, data: [...action.payload] };
+      return {
+        ...statePart,
+        data: [...action.payload],
+      };
     case START_REQUEST:
       return {
         ...statePart,
-        request: { pending: true, error: null, success: false },
+        request: {
+          pending: true,
+          error: null,
+          success: false,
+        },
       };
     case END_REQUEST:
       return {
         ...statePart,
-        request: { pending: false, error: null, success: true },
+        request: {
+          pending: false,
+          error: null,
+          success: true,
+        },
       };
     case ERROR_REQUEST:
       return {
         ...statePart,
-        request: { pending: false, error: action.error, success: false },
+        request: {
+          pending: false,
+          error: action.error,
+          success: false,
+        },
       };
     default:
       return statePart;

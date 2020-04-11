@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import Button from "../Button/Button";
 
 const productBox = ({
-  id,
   title,
   image,
   type,
@@ -13,7 +12,7 @@ const productBox = ({
   availability,
   price,
 }) => (
-  <div className={styles.conteiner} id={id}>
+  <div className={styles.conteiner}>
     <div className={styles.img}>
       <img src={image} alt="Product" />
     </div>{" "}
@@ -22,16 +21,21 @@ const productBox = ({
       <div className={styles.specificationBox}>
         <p>
           {" "}
-          Rodzaj: <b> {type} </b>
-        </p>
+          Rodzaj: <b> {type} </b>{" "}
+        </p>{" "}
         <p>
           {" "}
-          Skład: <b> {composition} </b>
-        </p>
+          Skład: <b> {composition} </b>{" "}
+        </p>{" "}
         <p>
           {" "}
-          Waga: <b> {weight} </b>
-        </p>
+          Waga:{" "}
+          <b>
+            {" "}
+            {weight}
+            {" "}
+          </b>{" "}
+        </p>{" "}
       </div>{" "}
       <div>
         <p> Dostępność: icona {availability} </p>{" "}
@@ -40,14 +44,13 @@ const productBox = ({
           {price}
           zł{" "}
         </p>{" "}
-      </div>
+      </div>{" "}
       <Button> Do koszyka </Button>{" "}
-    </div>
+    </div>{" "}
   </div>
 );
 
 productBox.propTypes = {
-  id: PropTypes.any.isRequired,
   title: PropTypes.string.isRequired,
   image: PropTypes.any,
   type: PropTypes.string.isRequired,
