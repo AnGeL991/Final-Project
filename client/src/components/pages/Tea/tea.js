@@ -1,16 +1,15 @@
 import React from "react";
 import styles from "./tea.module.scss";
 import HeaderShop from '../../features/headerShop/headerShop';
-import BestSeller from '../../features/BestSeller/bestSeller';
+import Best from '../../features/BestSeller/best';
 import ProductTeaView from '../../features/ProductView/tea/ProductTeaViewContainer';
-
+import arg from '../../db';
 const Tea = () => (
   <div className={styles.container}>
     <div className={styles.shopBox}>
       <HeaderShop title="Czas na herbate"/>
       <section className={styles.bestProductBox}>
-        <BestSeller title='Product tygodnia' price='123 zł.' type='Kawa ziarnista' composition='40% Arabica' weight='5kg'/>
-        <BestSeller title='Bestsellery' price='123 zł.' type='Kawa ziarnista' composition='40% Arabica' weight='5kg'/>
+      {arg.map(el =><Best key={el.id}{...el}/>)}
       </section>
      < ProductTeaView/>
     </div>

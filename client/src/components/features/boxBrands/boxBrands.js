@@ -11,8 +11,6 @@ const BoxBrands = () => (
       <section className={styles.slider}>
       <Slider slides={images} autoPlay={2}/>
       </section>
-    
-
       <div className={styles.Position}>
         <Button className={styles.button}>
           <NavLink to="/producenci">

@@ -9,6 +9,9 @@ import {
   faShoppingBasket,
 } from "@fortawesome/free-solid-svg-icons";
 import SearchBox from "../SearchBox/searchBox";
+import {NavLink} from 'react-router-dom';
+
+
 const ContactNav = () => (
   <div>
     <div className={styles.data}>
@@ -37,14 +40,14 @@ const ContactNav = () => (
       </div>
       <div className={styles.basket}>
         <a href="#" title="koszyk" className={styles.count}>
-          <img></img>Koszyk
+          Koszyk
         </a>
-        <div className={styles.circleSearch}>
+        <NavLink to='/order'><div className={styles.circleSearch}>
           <FontAwesomeIcon
             icon={faShoppingBasket}
             className={styles.circleIcon}
           />
-        </div>
+        </div></NavLink>
       </div>
     </div>
   </div>

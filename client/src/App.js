@@ -9,6 +9,7 @@ import Yerba from './components/pages/Yerba/yerba';
 import CoffeeMachin from './components/pages/CoffeeMachin/coffeeMachin';
 import NotFound from './components/pages/NotFound/NotFound';
 import Sale from './components/pages/Sale/sale';
+import Order from "./components/pages/Order/order.js";
 
 class App extends React.Component {
 
@@ -24,7 +25,9 @@ class App extends React.Component {
         <Route exact path='/yerba' component={Yerba}/>
         <Route exact path='/Expresy$młynki' component={CoffeeMachin}/>
         <Route exact path='/promocje' component={Sale}/>
+        <Route exact path='/order' component={Order}/>
         <Route exact path='*' component={NotFound}/> 
+
         </Switch>
       </MainLayout>
     );

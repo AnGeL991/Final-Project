@@ -1,54 +1,124 @@
-import React from "react";
-import styles from "./bestSeller.module.scss";
-import PropTypes from "prop-types";
-import Button from "../../common/Button/Button";
-import ArrowRight from "../../common/Arrow/ArrowRight";
-import ArrowLeft from "../../common/Arrow/ArrowLeft";
+// /** @jsx jsx */
+// import React, { useState, useEffect, useRef } from 'react'
+// import styles from '../../common/Slider.module.scss'
+// import Arrow from '../Arrow/Arrow'
+// import { jsx } from '@emotion/core'
+// import Best from './best';
+// import SliderContent from './SliderContent';
 
-const bestSeller = ({
-  title,
-  secondTitle,
-  price,
-  type,
-  composition,
-  weight,
-}) => (
-  <div className={styles.bestProduct}>
-    <div className={styles.arrow}>
-      <ArrowLeft />
-    </div>
-    <h3 className={styles.title}>{title}</h3>
-    <h4 className={styles.secondTitle}>{secondTitle}Nazwa</h4>
-    <img
-      src="https://images.unsplash.com/photo-1542109545-6cf5d8a3bcd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
-      alt="produkt"
-      className={styles.img}
-    />
-    <p className={styles.price}>{price}</p>
-    <p>
-      Rodzaj: <b>{type}</b>{" "}
-    </p>
-    <p>
-      skład: <b>{composition}</b>{" "}
-    </p>
-    <p>
-      Waga: <b>{weight}</b>
-    </p>
-    <Button>Do Koszyka</Button>
-    <div className={styles.arrow}>
-      <ArrowRight />
-    </div>
-  </div>
-);
+// const getWidth = () => window.innerWidth
 
-bestSeller.propTypes = {
-  title: PropTypes.string,
-  secondTitle: PropTypes.string,
-  //image: PropTypes.image.isRequired,
-  price: PropTypes.number,
-  type: PropTypes.string,
-  composition: PropTypes.string,
-  weight: PropTypes.string,
-};
+// const bestSeller = (props) => {
+//   const { slides } = props
 
-export default bestSeller;
+//   const firstSlide = slides[0];
+//   const secondSlide = slides[1];
+//   const thirdSlide = slides[2];
+//   const lastSlide = slides[slides.length - 1];
+
+//   const [state, setState] = useState({
+//     activeIndex: 0,
+//     translate: 0,
+//     transition: 0.45,
+//     _slides: [lastSlide,firstSlide,secondSlide,thirdSlide]
+//   })
+
+//   const { translate, transition, activeIndex,_slides } = state;
+
+//   const autoPlayRef = useRef()
+//   const transitionRef = useRef()
+//   const resizeRef = useRef()
+
+//   useEffect(() => {
+//     autoPlayRef.current = nextSlide
+//     transitionRef.current = smoothTransition
+//     resizeRef.current = handleResize
+//   })
+
+//   useEffect(() => {
+//     const play = () => {
+//       autoPlayRef.current()
+//     }
+//     const smooth = () => {
+//       transitionRef.current()
+//     }
+//     const resize = () => {
+//       resizeRef.current()
+//     }
+
+//     const transitionEnd = window.addEventListener('transitionend', smooth);
+//     const onResize = window.addEventListener('resize',resize);
+//     let interval = null;
+//     if(props.autoPlay) {
+//       interval = setInterval(play, props.autoPlay * 1000);
+//     }
+    
+//     return () => {
+     
+//       window.removeEventListener('transitionend', transitionEnd)
+//       window.removeEventListener('resize', onResize)
+//       if(props.autoPlay) {
+//         clearInterval(interval)
+//       }
+//     }
+//   }, [])
+
+//   const handleResize = ()=> {
+//     setState({...state,translate:170, transition:0})
+//   }
+
+//   const efect = useEffect(()=> {
+//     if(transition === 0) setState({ ...state,transition: 0.45})
+//   },[transition]);
+
+//   const smoothTransition = () => {
+//     let _slides = []
+//     if (activeIndex === slides.length -1)
+//       _slides = [slides[slides.length - 2], lastSlide,firstSlide,]
+//     else if (activeIndex === 0) _slides = [lastSlide, firstSlide, secondSlide,thirdSlide]
+//     else _slides = slides.slice(activeIndex -1 , activeIndex + 3)
+
+//     setState({
+//       ...state,
+//       _slides,
+//       transition: 0,
+//       translate: 0,
+//     })
+//   }
+
+//   const nextSlide = () => {
+   
+//     setState({
+//       ...state,
+//       activeIndex: activeIndex === slides.length - 1 ? 0 : activeIndex + 1,
+//       translate: translate + 170,
+//     })
+//   }
+
+//   const prevSlider = () => {
+//     setState({
+//       ...state,
+//       activeIndex: activeIndex === 0 ? slides.length -1 : activeIndex -1,
+//       translate: 0,
+//     })
+//   }
+
+//   return (
+//     <div className={styles.Slider}>
+//       <SliderContent
+//         translate={translate}
+//         transition={transition}
+//         width={getWidth() * props.slides.length}
+//       >
+//         {props.slides.map((slide, i) => (
+//           <Best key={slide + i}  title ={slide.title} secondTitle={slide.secondTitle} composition={slide.composition} weight={slide.weight} type={slide.type} price={slide.price} />
+//           ))}
+//       </SliderContent>
+//       <Arrow direction="left" handleClick={prevSlider} />
+//       <Arrow direction="right" handleClick={nextSlide} />
+//     </div>
+//   )
+// }
+
+
+// export default bestSeller
