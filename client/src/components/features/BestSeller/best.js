@@ -14,7 +14,7 @@ const best = ({ title, secondTitle,image, composition, weight, type, price }) =>
       alt="produkt"
       className={styles.img}
     />
-    <p className={styles.price}>{price} zł</p>
+    <p className={styles.price}>{price.toFixed(2)} zł</p>
     <p>
       Rodzaj: <b>{type}</b>
     </p>

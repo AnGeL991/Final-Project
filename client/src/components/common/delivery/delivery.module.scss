@@ -1,17 +1,18 @@
 .delivery{
-    width: 33%;
+    width: 100%;
+    max-width: 250px;
     color:white;
     padding:10px;
     border-bottom:1px solid white;
-    box-shadow: inset 10px -10px 10px 6px rgba(242,233,242,0.6);
+    box-shadow: inset 10px -10px 5px 0px rgba(242,233,242,0.6);
     margin-bottom: 20px;
     border-radius: 20px;
     label{
         font-size: 14px;
     }
-    .desription{
-        display: block;
-        
+    .desription{ 
+        display: inline-block;
+        margin: 0 20px;
         font-size: 12px;
     }
 }

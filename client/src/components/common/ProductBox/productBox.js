@@ -36,7 +36,7 @@ const productBox = ({
       <div>
         <p> Dostępność: icona {availability} </p>
         <p className={styles.price}>
-          {price}
+          {price.toFixed(2)}
           zł
         </p>
       </div>

@@ -19,7 +19,7 @@ const Sale = () => (
         type='kawa ziarniska'
         composition='100% arabica'
         weight='5kg'
-        price='249'
+        price={249.90}
         />
         </div>
       </section>
