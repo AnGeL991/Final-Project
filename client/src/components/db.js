@@ -12,9 +12,6 @@ export default  [{
     image: "https://sklepkawa.pl/environment/cache/images/300_300_productGfx_11382/herbata-lisciasta-Sir-Adalberts-Blueberry-Black-Tea-lisciasta-puszka.jpg",
     price: 18,
     type: "Herbata liściasta",
-    
     weight: "100g"
 }
-
-
 ]

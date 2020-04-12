@@ -13,7 +13,7 @@ const teaProductRoutes = require('./routes/teaProduct.routes');
 const yerbaProductRoutes = require('./routes/yerbaProduct.routes');
 const machinProductRoutes = require('./routes/machinProduct.routes');
 const brandRoutes = require('./routes/brand.routes');
-
+const orderRoutes = require('./routes/order.routes');
 
 app.use(express.static(path.join(__dirname, "/client/build")));
 app.use(express.urlencoded({ extended: false }));
@@ -25,6 +25,7 @@ app.use("/api", teaProductRoutes);
 app.use("/api", yerbaProductRoutes);
 app.use("/api", machinProductRoutes);
 app.use("/api", brandRoutes);
+app.use('/api',orderRoutes);
 
 
 
@@ -36,5 +37,5 @@ app.listen(process.env.PORT || 8000, () => {
   console.log("Server is running on port: 8000");
 });
 app.use((req, res) => {
-  res.status(404), send("404 not found");
+  res.status(404).send("404 not found");
 });

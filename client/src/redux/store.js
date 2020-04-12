@@ -7,6 +7,8 @@ import teaProduct from './teaRedux';
 import machinProduct from './machinRedux';
 import yerbaProduct from './yerbaRedux';
 import brandProduct from './brandRedux';
+import orderProduct from './orderRedux';
+
 //combine reducers
 const rootReducer = combineReducers({
   coffeeProduct,
@@ -14,6 +16,7 @@ const rootReducer = combineReducers({
   machinProduct,
   yerbaProduct,
   brandProduct,
+  orderProduct,
 })
 
 

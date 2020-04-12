@@ -3,7 +3,7 @@ import { API_URL } from "../config";
 
 /* SELECTORS */
 export const getMachinProduct = ({ machinProduct }) => machinProduct.data;
-export const getRequest = ({ machinProduct }) => machinProduct.request;
+export const getRequest = ({ machinProduct }) => machinProduct.requests;
 
 // action name creator //
 const reducerName = "machinProduct";

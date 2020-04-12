@@ -9,7 +9,7 @@ import Yerba from './components/pages/Yerba/yerba';
 import CoffeeMachin from './components/pages/CoffeeMachin/coffeeMachin';
 import NotFound from './components/pages/NotFound/NotFound';
 import Sale from './components/pages/Sale/sale';
-import Order from "./components/pages/Order/order.js";
+import Order from "./components/pages/Order/orderContainer";
 
 class App extends React.Component {
 
