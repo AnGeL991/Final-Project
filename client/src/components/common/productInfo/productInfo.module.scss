@@ -35,3 +35,52 @@
     }
   }
 }
+@media(max-width:2560px){
+  .products{
+    .productInfo{width: calc(33% - 40px);}
+    
+    .imgProductInfo{ 
+      img{
+      position: relative;
+      left:50%;
+      transform: translateX(-50%);
+    }
+  }}
+}
+
+@media(max-width:1024px){
+  .products{
+    .productInfo{width: calc(50% - 40px);}
+    .imgProductInfo img{
+      position: relative;
+      left:50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+@media(max-width:768px) {
+  .products{ 
+    min-height: 200px;
+
+    .imgProductInfo img {
+      width: 150px;
+      height: 150px;
+    
+    }
+  }
+}
+@media ( max-width: 420px) {
+  .products{ 
+    min-height: 200px;
+    .productInfo{
+      width: 100%;
+      max-width: 200px ;
+      margin-left:40px;
+    }
+    .imgProductInfo img {
+      width: 100px;
+      height: 100px;
+      margin-left:30px
+    }
+  }
+}

@@ -13,7 +13,7 @@ import {NavLink} from 'react-router-dom';
 
 
 const ContactNav = () => (
-  <div>
+  <div className={styles.container}>
     <div className={styles.data}>
       <ul className={styles.firstnav}>
         <li>

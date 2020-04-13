@@ -19,3 +19,68 @@
     color: white;
   }
 }
+@media (max-width:2560px) {
+  .logo{
+  width: 350px;
+  height: 250px;
+  .logoIcon{
+    font-size: 160px;
+  }
+}
+}
+@media (max-width:1800px) {
+  .logo{
+  width: 250px;
+  height: 150px;
+  .logoIcon{
+    font-size: 80px;
+  }
+}
+}
+@media(max-width:1440px) {
+  .logo{
+    width: 250px;
+    height: 150px;
+    .logoIcon{
+      font-size: 100px;
+    }
+  }
+}
+@media(max-width:1024px) {
+.logo{
+    width: 150px;
+  height: 150px;
+  .logoIcon{
+    font-size: 70px;
+  }
+}
+}
+@media(max-width:768px) {
+  .logo{
+    width: 100px;
+    height: 150px;
+    .logoIcon{
+      font-size: 50px;
+    }
+  }
+}
+@media(max-width:425px){
+  .logo{
+    width: 70px;
+    height: 100px;
+    .logoIcon{
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width:360px) {
+  .logo{
+    width: 55px;
+    height: 75px;
+    top: 10px;
+    left: 10px;
+    .logoIcon{
+      font-size: 20px;
+    }
+  }
+}

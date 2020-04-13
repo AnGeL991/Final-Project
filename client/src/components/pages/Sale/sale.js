@@ -15,12 +15,28 @@ const Sale = () => (
       <section className={styles.productSection}>
         <div className={styles.productViewFull}>
         <ProductBox 
+        image="https://sklepkawa.pl/environment/cache/images/300_300_productGfx_11597/Lavazza-Crema-e-Aroma-1-kg.jpg"
         title='title' 
         type='kawa ziarniska'
         composition='100% arabica'
         weight='5kg'
         price={249.90}
         />
+        <ProductBox 
+        title='title' 
+        type='kawa ziarniska'
+        composition='100% arabica'
+        weight='5kg'
+        price={249.90}
+        />
+        <ProductBox 
+        title='title' 
+        type='kawa ziarniska'
+        composition='100% arabica'
+        weight='5kg'
+        price={249.90}
+        />
+  
         </div>
       </section>
     </div>

@@ -1,27 +1,2 @@
 @import "../../../styles/settings.scss";
-
-.container {
-  padding: 20px;
-  margin-top: 50px;
-}
-.shopBox {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 0.05fr 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-
-  .bestProductBox {
-    grid-area: 1/1/3/2;
-  }
-  .productSection {
-    grid-area: 2/2/3/3;
-  }
-  .title {
-    padding: 20px;
-    text-transform: uppercase;
-    color: white;
-    font-size: $font-title-size;
-    text-align: center;
-  }
-}
+@import '../../../styles/typography.scss';

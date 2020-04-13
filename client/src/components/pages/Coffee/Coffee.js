@@ -7,7 +7,7 @@ import arg from '../../db';
 
 
 class Coffee extends React.Component{ 
-  
+ 
   render(){
     return (
       <div className={styles.container}>
@@ -17,7 +17,7 @@ class Coffee extends React.Component{
         {arg.map(el =><Best key={el.id}{...el}/>)}
         
         </section>
-      <ProductCoffeeView/>
+      <ProductCoffeeView />
       </div>
     </div>
   );

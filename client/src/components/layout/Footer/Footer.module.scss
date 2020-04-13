@@ -1,5 +1,5 @@
 .footer{
-    min-height: 300px;
+    
     width: 100%;
     background-color: #451e02d5;
     display:grid;
@@ -26,4 +26,26 @@
     }
     }
     
+}
+@media(max-width:2560px){
+    .footer{
+        text-align: center;
+        font-size: 12px;
+        .box{
+            margin:0;
+            padding:0;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        .box{
+            margin:0;
+            text-align: center;
+            border-right: none;
+            border-bottom: 2px solid white;
+        }
+    }
 }

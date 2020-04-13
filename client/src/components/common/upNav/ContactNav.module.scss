@@ -8,12 +8,13 @@
   color: white;
   margin-left: 20px;
   text-align: center;
-  li{ width: auto;
-      margin-right:30px;
+  li {
+    width: auto;
+    margin-right: 30px;
   }
   .icon {
     padding-top: 10px;
-    font-size:28px;
+    font-size: 28px;
     padding-right: 10px;
   }
   .icon,
@@ -27,29 +28,28 @@
 }
 
 .purchase {
-  .widthSearch{
+  .widthSearch {
     width: calc(50% + 35px);
     display: inline-block;
   }
-  .circleSearch{
+  .circleSearch {
     position: absolute;
-    top:0;
-    left:calc(100% - 40px);
-    border:3px solid white;
-    width: 40px;
-    height:40px;
+    top: -1px;
+    left: calc(100% - 40px);
+    border: 3px solid white;
+    width: 41px;
+    height: 41px;
     border-radius: 50%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-content: center;
-    .circleIcon{
+    .circleIcon {
       position: relative;
-      top:50%;
+      top: 50%;
       transform: translateY(-50%);
       font-size: 16px;
-      color:white;
-      
-      }
+      color: white;
+    }
   }
   .basket {
     position: relative;
@@ -60,7 +60,215 @@
     border-radius: 50px;
     font-size: 12px;
     a {
+      margin-left: 5px;
       color: white;
+    }
+  }
+}
+@media (max-width: 2560px) {
+  .firstnav {
+    padding: 10px;
+    li {
+      width: auto;
+      margin-right: 100px;
+    }
+    .icon {
+      font-size: 70px;
+    }
+    a {
+      font-size: 38px;
+    }
+  }
+  .purchase {
+    .basket {
+      padding: 20px;
+      font-size: 32px;
+    }
+    .circleSearch {
+      left: calc(100% - 98px);
+      width: 98px;
+      height: 98px;
+      .circleIcon {
+        font-size: 42px;
+      }
+    }
+  }
+}
+@media (max-width: 1800px) {
+  .firstnav {
+    padding: 5px;
+    li {
+      width: auto;
+      margin-right: 50px;
+    }
+    .icon {
+      font-size: 40px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+  .purchase {
+    .basket {
+      padding: 5px;
+      font-size: 22px;
+    }
+    .circleSearch {
+      left: calc(100% - 50px);
+      width: 50px;
+      height: 50px;
+
+      .circleIcon {
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .firstnav {
+    li {
+      width: auto;
+      margin-right: 30px;
+    }
+    .icon {
+      font-size: 55px;
+    }
+    a {
+      font-size: 28px;
+    }
+  }
+  .purchase {
+    .basket {
+      padding: 10px;
+      font-size: 32px;
+    }
+    .circleSearch {
+      left: calc(100% - 78px);
+      width: 78px;
+      height: 78px;
+      .circleIcon {
+        font-size: 42px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .firstnav {
+    padding: 5px;
+    li {
+      width: auto;
+      margin-right: 10px;
+    }
+    .icon {
+      font-size: 40px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+  .purchase {
+    .basket {
+      padding: 5px;
+      font-size: 22px;
+    }
+    .circleSearch {
+      left: calc(100% - 50px);
+      width: 50px;
+      height: 50px;
+
+      .circleIcon {
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .firstnav {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5px;
+    .icon {
+      font-size: 32px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+  .purchase {
+    .widthSearch {
+      position: relative;
+      top: 20px;
+    }
+  }
+  .basket {
+    top: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .purchase {
+    position: relative;
+    top: 60px;
+    left: -70px;
+    .circleSearch .circleIcon {
+      font-size: 18px;
+    }
+    .widthSearch {
+      width: 320px;
+    }
+    .basket {
+      width: 270px;
+      top: -130px;
+      left: 100px;
+    }
+  }
+  .firstnav {
+    display: none;
+  }
+  .data {
+    display: none;
+  }
+  .container {
+    max-width: 100px;
+  }
+}
+@media(max-width:375px) {
+  .purchase {
+    left:-80px;
+    .basket {
+      width: 270px;
+      top: -130px;
+      left: 100px;
+      a{
+        font-size:18px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .purchase {
+    position: relative;
+    top: 60px;
+    left: -70px;
+    .circleSearch {
+      left: calc(100% - 45px);
+      width: 45px;
+      height: 45px;
+      .circleIcon {
+        font-size: 18px;
+      }
+    }
+    .widthSearch {
+      width: 320px;
+    }
+    .basket {
+      a {
+        font-size: 15px;
+      }
+      padding: 3px;
+      width: 220px;
+      top: -130px;
+      left: 80px;
     }
   }
 }

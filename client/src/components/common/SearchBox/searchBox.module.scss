@@ -40,3 +40,129 @@
     
     }
   }
+  @media (max-width: 2560px) {
+    .searchInput{
+      input{
+        margin-left:200px;
+        width: 80%;
+        padding:30px;
+        font-size: 32px;
+      }
+      .circleSearch{
+        left:calc(100% - 110px);
+        width: 100px;
+        height: 100px;
+        .circleIcon{
+          font-size: 42px;
+          }
+      }
+    }
+  }
+  @media (max-width:1800px) {
+    .searchInput{
+      input{
+        margin-left:0px;
+        width: 100%;
+        padding:5px;
+        font-size: 32px;
+      }
+      .circleSearch{
+        left:calc(100% - 50px);
+        width: 50px;
+        height: 50px;
+        .circleIcon{
+          font-size: 22px;
+          }
+      }
+    }
+}
+  @media(max-width:1440px) {
+    .searchInput{
+      input{
+        margin-left:30px;
+        width: 90%;
+        padding:20px;
+        font-size: 32px;
+      }
+      .circleSearch{
+        left:calc(100% - 106px);
+        width: 80px;
+        height: 80px;
+        .circleIcon{
+          font-size: 42px;
+          }
+      }
+    }
+  }
+  @media(max-width:1024px) {
+    .searchInput{
+      input{
+        margin-left:80px;
+        width: 80%;
+        padding:10px;
+        font-size: 22px;
+      }
+      .circleSearch{
+        left:calc(100% - 50px);
+        width: 50px;
+        height: 50px;
+        .circleIcon{
+          font-size: 22px;
+          }
+      }
+    }
+  }
+  @media(max-width:768px) {
+    .searchInput{
+      input{
+        margin-left:0px;
+        width: 100%;
+      }
+    }
+  }
+  @media(max-width:425px) {
+    .searchInput{
+      input{
+        margin-left:80px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        
+      }
+      .circleSearch{
+        left:calc(100% + 35px);
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+  @media(max-width:375px) {
+    .searchInput{
+      input{
+        margin-left:80px;
+        font-size: 15px;
+        padding:12px;
+      }
+      .circleSearch{
+        left:calc(100% + 35px);
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+  @media(max-width:320px) {
+    .searchInput{
+      input{
+        padding:12px;
+        margin-left:65px;
+        width: 80%;
+      }
+      .circleSearch{
+        width: 44px;
+        height: 44px;
+        left:calc(100% - 33px);
+        .circleIcon{
+          font-size: 18px;
+          }
+      }
+    }
+  }

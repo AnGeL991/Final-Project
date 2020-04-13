@@ -3,6 +3,8 @@ import styles from './productBox.module.scss'
 import PropTypes from 'prop-types'
 import Button from '../Button/Button'
 
+
+
 const productBox = ({
   title,
   image,
@@ -10,15 +12,15 @@ const productBox = ({
   composition,
   weight,
   availability,
-  price
+  price,
 }) => (
-  <div className={styles.conteiner}>
+  <div className={styles.conteiner} >
     <div className={styles.img}>
       <img src={image} alt="Product" />
     </div>
     <div className={styles.specification}>
       <h3 className={styles.title}> {title} </h3>
-      <div className={styles.specificationBox}>
+      <div className={styles.specificationBox} >
         <p>
           Rodzaj: <b> {type} </b>
         </p>
@@ -40,7 +42,7 @@ const productBox = ({
           zł
         </p>
       </div>
-      <Button> Do koszyka </Button>
+      <button className={styles.button}> Do koszyka </button>
     </div>
   </div>
 )
@@ -53,6 +55,6 @@ productBox.propTypes = {
   weight: PropTypes.string.isRequired,
   availability: PropTypes.bool.isRequired,
   price: PropTypes.number,
-  discount: PropTypes.number
+  discount: PropTypes.number,
 }
 export default productBox

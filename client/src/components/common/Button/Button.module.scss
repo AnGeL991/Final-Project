@@ -14,3 +14,33 @@
         box-shadow: $boxShadowBorder;
     }
 }
+@media (max-width:1024px){
+    .component {
+        margin-top: 50px;
+        font-size: 24px;
+        padding: 20px;
+        width: 260px;
+    }
+}
+@media (max-width:768px) {
+    .component{
+        font-size: 20px;
+        padding: 10px;
+        width: 200px;
+    }
+}
+@media (max-width:425px) {
+    .component{
+        font-size: 18px;
+        padding: 10px;
+        width: 150px;
+    }
+}
+@media (max-width:360px){
+    .component{
+        margin-top: 30px;
+        font-size: 12px;;
+        padding:10px;
+        width: 140px;
+    }
+}

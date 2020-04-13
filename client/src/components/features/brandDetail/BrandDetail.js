@@ -8,24 +8,21 @@ const BrandDetail = ({
   title,
   description,
 }) => (
-  <div>
-    <div className={styles.box}>
+  <div className={styles.container}>
       <div className={styles.brandDetailbox}>
         <h3 className={styles.title}>{title}</h3>
         <img className={styles.brandImg} src={img} alt="brand" />
         <p className={styles.description}>{description}</p>
         <div className={styles.buttonPosition}>
           <div className={styles.position}>
-            <Button>Zobacz Więcej</Button>
+            <button className={styles.button}>Zobacz Więcej</button>
           </div>
-
           <div className={styles.position}>
-            <Button>Kup Product</Button>
+            <button className={styles.button}>Kup Product</button>
           </div>
         </div>
       </div>
     </div>
-  </div>
 );
 BrandDetail.propTypes = {
   img: PropTypes.any.isRequired,

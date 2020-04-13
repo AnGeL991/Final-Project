@@ -1,4 +1,5 @@
-export default  [{
+export default  [
+    {
     title: "Product Tygodnia",
     secondTitle: "Lavazza crema e Aroma",
     image: "https://sklepkawa.pl/environment/cache/images/300_300_productGfx_11597/Lavazza-Crema-e-Aroma-1-kg.jpg",

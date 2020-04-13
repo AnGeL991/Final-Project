@@ -11,7 +11,7 @@ const START_REQUEST = createActionName('START_REQUEST')
 const END_REQUEST = createActionName('END_REQUEST')
 const ERROR_REQUEST = createActionName('ERROR_REQUEST')
 
-const LOAD_ORDERS = createActionName('LOAD_BRAND')
+const LOAD_ORDERS = createActionName('LOAD_PRODUCT')
 const ADD_PRODUCT = createActionName('ADD_PRODUCT')
 
 export const startRequest = () => ({ type: START_REQUEST })

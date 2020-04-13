@@ -1,12 +1,10 @@
-@import "../../../styles/settings.scss";
-@import "../../../styles/typography.scss";
+@import '../../../styles/settings.scss';
+@import '../../../styles/typography.scss';
 
 .bestProduct {
   box-shadow: $boxShadowBorder;
   margin-bottom: 20px;
   padding: 20px;
-  height: calc(50% - 10px);
-  max-height: 480px;
   text-align: center;
   position: relative;
   &:hover .arrow {
@@ -45,10 +43,44 @@
     color: white;
     text-align: center;
   }
-  .position{
-    position: absolute;
-    bottom:0;
-    left:50%;
-    transform: translate(-50%,-50%);
+  .position {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+}
+
+@media (max-width: 2560px) {
+  .bestProduct {
+    img {
+      height: 200px;
+    }
+    .position {
+      position: relative;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+@media (max-width: 1800px) {
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1024px) {
+  .bestProduct {
+    img {
+      height: 100px;
+    }
+  }
+}
+@media (max-width: 764px) {
+  .bestProduct{
+    display:none;
+  }
+}
+@media (max-width: 425px) {
+}
+@media (max-width: 360px) {
 }

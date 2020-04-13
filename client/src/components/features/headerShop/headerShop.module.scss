@@ -17,3 +17,9 @@
     }
    
 }
+
+@media(max-width:768px){
+    .upBox {
+        grid-area: 1/1/2/2;
+    }
+}

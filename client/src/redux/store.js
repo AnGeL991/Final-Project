@@ -8,6 +8,7 @@ import machinProduct from './machinRedux';
 import yerbaProduct from './yerbaRedux';
 import brandProduct from './brandRedux';
 import orderProduct from './orderRedux';
+import basket from './basketRedux';
 
 //combine reducers
 const rootReducer = combineReducers({
@@ -17,6 +18,7 @@ const rootReducer = combineReducers({
   yerbaProduct,
   brandProduct,
   orderProduct,
+  basket,
 })
 
 

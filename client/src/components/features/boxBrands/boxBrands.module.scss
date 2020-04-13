@@ -57,3 +57,16 @@
 
  
 }
+@media (max-width:1024px){
+  .container .opinion .slider  {
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    display: none;
+  }
+}
