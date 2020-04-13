@@ -9,6 +9,17 @@ exports.getAll = async(req,res) => {
         res.status(500).json(err);
     }
 }
+exports.getOne = async (req,res) => {
+    try {
+        const dep = await CoffeeProduct.findById(req.params.id);
+        if(!dep) res.status(404).json({
+            message: 'Not found'
+        })
+        else res.json(dep);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+}
 exports.postOne = async (req,res) => {
     try {
         const {

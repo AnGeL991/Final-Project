@@ -14,6 +14,7 @@ const yerbaProductRoutes = require('./routes/yerbaProduct.routes');
 const machinProductRoutes = require('./routes/machinProduct.routes');
 const brandRoutes = require('./routes/brand.routes');
 const orderRoutes = require('./routes/order.routes');
+const basketRoutes = require('./routes/basket.routes');
 
 app.use(express.static(path.join(__dirname, "/client/build")));
 app.use(express.urlencoded({ extended: false }));
@@ -26,6 +27,7 @@ app.use("/api", yerbaProductRoutes);
 app.use("/api", machinProductRoutes);
 app.use("/api", brandRoutes);
 app.use('/api',orderRoutes);
+app.use('/api',basketRoutes);
 
 
 
