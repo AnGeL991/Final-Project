@@ -13,9 +13,9 @@ class Order extends React.Component {
       email: '',
       addresStreet: '',
       addressCity: '',
-      addressPostCode: ''
-      //price: 11,
-      //delivery: 2
+      addressPostCode: '',
+      price: 0,
+      delivery: 0
     },
     isError: false
   }
@@ -73,7 +73,7 @@ class Order extends React.Component {
           <Table />
         </div>
         <div className={styles.personalData}>
-          <form className={styles.personalData} onSubmit={SubmitForm}>
+          <form  onSubmit={SubmitForm}>
             {isError && <Alert color="warning">NIe działa</Alert>}
             {requests['ADD_PRODUCT'] &&
               requests['ADD_PRODUCT'].error &&

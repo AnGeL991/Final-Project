@@ -15,4 +15,21 @@
         margin: 0 20px;
         font-size: 12px;
     }
+    .price{
+        font-size:16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .delivery {
+        label {
+            font-size:13px;
+        }
+        .desription{
+            font-size: 10px;
+        }
+        .price{
+            font-size:12px;
+        }
+    }
 }
