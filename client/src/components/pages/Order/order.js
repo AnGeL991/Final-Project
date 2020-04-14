@@ -73,8 +73,10 @@ class Order extends React.Component {
           <Table />
         </div>
         <div className={styles.personalData}>
-          <form  onSubmit={SubmitForm}>
-            {isError && <Alert color="warning">NIe działa</Alert>}
+          <form onSubmit={SubmitForm}>
+            {isError && (
+              <Alert color="warning">Musisz wypełnić niezbędne pola</Alert>
+            )}
             {requests['ADD_PRODUCT'] &&
               requests['ADD_PRODUCT'].error &&
               !isError && (
@@ -82,17 +84,13 @@ class Order extends React.Component {
               )}
             {requests['ADD_PRODUCT'] &&
               requests['ADD_PRODUCT'].success &&
-              !isError && (
-                <Alert color="success">
-                  You've booked your ticket! Check you email in order to make a
-                  payment.
-                </Alert>
-              )}
+              !isError && <Alert color="success"></Alert>}
             {requests['ADD_PRODUCT'] && requests['ADD_PRODUCT'].pending && (
               <Progress animated className="mb-5" color="primary" value={75} />
             )}
             <h5>Dane do wysyłki:</h5>
             <input
+              required
               type="text"
               value={order.name}
               id="fname"
@@ -101,6 +99,7 @@ class Order extends React.Component {
               placeholder="Imie"
             />
             <input
+              required
               type="text"
               value={order.surname}
               id="Sname"
@@ -109,6 +108,7 @@ class Order extends React.Component {
               placeholder="Nazwisko"
             />
             <input
+              required
               type="email"
               value={order.email}
               id="email"
@@ -117,6 +117,7 @@ class Order extends React.Component {
               placeholder="email"
             />
             <input
+              required
               type="text"
               value={order.addresStreet}
               name="addresStreet"
@@ -124,6 +125,7 @@ class Order extends React.Component {
               placeholder="UL."
             />
             <input
+              required
               type="text"
               value={order.addressCity}
               name="addressCity"
@@ -131,6 +133,7 @@ class Order extends React.Component {
               placeholder="Miejsowość"
             />
             <input
+              required
               value={order.addressPostCode}
               type="text"
               name="addressPostCode"
